@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events and Basic Interactivity</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Events to demonstrate interactivity -->
+    
+    <button id="myButton">Click Me!</button>
+    <p id="hoverText">Hover over this text to highlight it</p>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="nameDisplay">Your name will appear here</p>
+
+    <!-- Building Interactive Elements -->
+<!-- Creating a Toggle Button -->
+
+<button id="toggleButton">Hide Text</button>
+<p id="toggleText">This will be hidden or shown when you click the button </p>
+
+<!-- Creating a Slider -->
+
+<input type="range" id="fontSlider" min="10" max="50" value="20">
+<p id="sliderText" style="font-size: 20px;">Adjust my size!</p>
+
+<!-- Creating a Modal -->
+<button id="openModal">Open Modal</button>
+<div id="modal">
+<p>This is a modal!</p>
+    <button id="closeModal">Close</button>
+  </div>
+  <br>
+  <br>
+
+<!-- Image Carousel-->
+ <div id="carousel">
+  <button onclick="previousImage()">Previous</button>
+  <img id="carouselImage" src="images/pic1.jpg" alt="image Carousel"/><br/>
+  <button onclick="nextImage()">Next</button>
+ </div>
+
+<br>
+<br>
+<br>
+
+  <!-- Form Validation -->
+    <form id="myform">
+  <label for="name">Name</label>
+  <input type="text" id="name" placeholder="name" required>
+  <span id="nameError" class="error"></span>
+  <br>
+
+  <label for="email">Email</label>
+  <input type="email" id="email" placeholder="email" required>
+  <span id="emailError" class="error"></span>
+  <br>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" placeholder="password" required>
+  <span id="passwordError" class="error"></span>
+  <br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script src="scripts/scripts.js"></script>
+
+</body>
+    
+</html>
