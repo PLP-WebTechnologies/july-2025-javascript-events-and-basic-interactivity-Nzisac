@@ -1,4 +1,4 @@
-
+/* Demonstrating Common Event Types*/
 const button = document.getElementById('myButton');
 button.addEventListener('click', () => {
     alert('Button was clicked!');
@@ -20,6 +20,8 @@ const text=document.getElementById('hoverText');
     input.onchange = function() {
     display.textContent = `Hello, ${input.value}!`;
     };
+
+    /* Creating interactive elements */
 
     const toggleButton = document.getElementById('toggleButton');
     const toggleText = document.getElementById('toggleText');
@@ -53,19 +55,7 @@ const text=document.getElementById('hoverText');
         modal.style.display = "none";
     };
 
-const form = document.getElementById("myform");
-const email = document.getElementById("email");
-const fullName = document.getElementById("name");
-const password = document.getElementById("password");
-
-form.onsubmit = function (event) {
-    event.preventDefault();
-    if (!email.value || !fullName.value || !password.value) {
-        alert("Please fill in all fields.");
-    } else {
-        alert("Form submitted successfully!");
-    }   
-};
+    /* Creating a Corousel */
 
 let images = [
     "images/pic1.jpg",
@@ -91,6 +81,8 @@ function previousImage() {
 }
 
 setInterval(nextImage, 3000);
+
+ /* Form Validation using JS */
 
 document.getElementById("myform").onsubmit = function(event) {
     event.preventDefault();
